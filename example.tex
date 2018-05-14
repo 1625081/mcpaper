@@ -1,0 +1,83 @@
+% !Mode:: "TeX:UTF-8"
+%!TEX program  = xelatex
+
+%\documentclass{cumcmthesis}
+\documentclass[withoutpreface,bwprint]{cumcmthesis} %去掉封面与编号页
+
+\usepackage{url}
+\title{出于蹭区块链热度的知识产权系统}
+\tihao{A}
+%\baominghao{4321}
+%\schoolname{XX大学}
+%\membera{小米}
+%\memberb{向左}
+%\memberc{哈哈}
+%\supervisor{老师}
+%\yearinput{2017}
+%\monthinput{08}
+%\dayinput{22}
+
+\begin{document}
+ \maketitle
+ \begin{abstract}
+夜夜夜夜
+
+\keywords{区块链\quad 知识产权\quad 去中心化}
+\end{abstract}
+
+%目录
+\tableofcontents
+
+\section{问题重述}
+
+\section{模型假设与符号说明}
+\subsection{模型假设}
+\subsection{符号说明}
+
+\section{问题分析与背景介绍}
+\subsection{问题分析}
+分析一下题目要求与满足这些要求的模型类别——就是基于区块链的模型
+\subsection{背景介绍}
+这一部分主要想介绍一下已有的系统与模型。章节名可以另起。
+
+\section{模型}
+\subsection{模型综述}
+
+系统中的每名用户拥有唯一的id（user id）与密钥，用于记录（transaction）的对象与记录有效性认证。
+
+记录有如下三类：
+\begin{itemize}
+\item{作品授权}
+
+该类记录须经版权所有者认证，其格式为：记录类型（transcation type）+作品的mediachainid+授权人用户id+被授权人id+权限类型+版权所有者签名。其中记录类型为“作品授权”。权限类型为“仅使用”、“使用与再创作”、“使用与再授权”、“转移”等。
+
+比较特殊的情况为创作者声明自己作品的版权。创作者应当首先将作品提交至mediachain系统，获得相应的id。被授权用户为创作者id，权限类型为“转移”，作品首先由创作者创造，并不存在真实的授权人，因此引入一特殊用户“所有人（Human）”，任何首创的作品被认为是由“所有人”将版权转移给创作者。
+
+\item{资金流动}
+该类记录须经资金持有者认证，其格式为：记录类型+交易金额+付款人用户id+收款人用户id+付款人签名+收款人签名。记录类型为“资金流动 ”。
+
+与其他区块链基础的货币不同，知识产权系统的货币仅为方便交易的数字记录（类似于支付宝而不是比特币），因此不仅仅存在内部的货币交易，也存在充值与体现等问题。因此系统设置一特殊用户“银行（Bank）”。用户在现实世界向银行交钱或者取钱，银行提供相应的记录证明并签字。如果为充值行为即银行向充值人付款，提现即为提现人向银行付款。
+\end{itemize}
+
+在用户生产相应的记录请求完成后，向全网广播，发出记录请求（transcation request），系统根据记录请求中含有的相关内容搜索产权记录链（intellectual property chain，IPC），核实记录请求的有效性（validation）。依照记录类型的不同，分为
+
+\begin{itemize}
+	\item{作品授权}
+	检验签名是否为授权人用户id的签名，其次根据IPC中的记录验证授权人是否具有授权资格。如果通过验证，则为有效记录；否则为无效记录。记录请求被驳回，并通知有权力出售该作品版权的用户。注意到一旦完成创作作品的版权就由“所有人”转移给了作者，因此此时作者是唯一的授权权利人。
+	\item{资金流动}
+	验证签名者是否为付款人，然后根据IPC记录验证授权人余额是否足以支付本次付款。如果通过验证，则为有效记录，否则为无效记录，驳回记录请求。注意到银行的余额应被判定为无穷。
+\end{itemize}
+
+如果被判定为有效记录（valid transcation），则进入记录缓冲区（transcation buffer）。每隔一段时间，基于一定的共识协议，由系统中的某一名用户将缓冲区内的记录作为新的区块添加至IPC末端并广播
+
+
+
+
+\subsection{知识产权的声明与保护}
+
+\subsection{知识产权的收益与分配}
+
+\section{总结}
+
+\section*{附件：项目建议书}
+\end{document} 
