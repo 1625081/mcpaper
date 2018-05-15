@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.5.11)  15 MAY 2018 13:24
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.5.11)  15 MAY 2018 16:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1605,16 +1605,16 @@ File: figures/mediachain.jpg Graphic file (type QTm)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[4] [5]
+[4]
 File: figures/hash.png Graphic file (type QTm)
- <use  "figures/hash.png" >
-LaTeX Font Info:    Calculating math sizes for size <12.05> on input line 92.
-LaTeX Font Info:    Try loading font information for U+msa on input line 92.
+ <use  "figures/hash.png" > [5]
+LaTeX Font Info:    Calculating math sizes for size <12.05> on input line 88.
+LaTeX Font Info:    Try loading font information for U+msa on input line 88.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 92.
+LaTeX Font Info:    Try loading font information for U+msb on input line 88.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1622,19 +1622,16 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: figures/s256.png Graphic file (type QTm)
 
 <use  "figures/s256.png" >
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
 
  []
 
 [7]
 File: figures/shu.png Graphic file (type QTm)
- <use  "figures/shu.png" >
+ <use  "figures/shu.png" > [8]
 File: figures/mc-stack.png Graphic file (type QTm)
  <use  "figures/mc-stack.png" >
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[8] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
@@ -1646,7 +1643,7 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 * Font 'FandolFang-Regular' does not contain script 'CJK'.
 *************************************************
 \g__fontspec_family_FandolFang-Regular_int=\count192
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 208
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 204
 .
 (/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmtt.fd
 File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1687,24 +1684,24 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [12] [13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 346--348
+Underfull \hbox (badness 10000) in paragraph at lines 342--344
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 367--369
+Underfull \hbox (badness 10000) in paragraph at lines 363--365
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 400--402
+Underfull \hbox (badness 10000) in paragraph at lines 396--398
 
  []
 
 [16] [17]
 File: figures/logo-108.png Graphic file (type QTm)
  <use  "figures/logo-108.png" >
-Overfull \hbox (23.34218pt too wide) in paragraph at lines 458--459
+Overfull \hbox (23.34218pt too wide) in paragraph at lines 454--455
 []\EU1/TimesNewRoman(0)/m/n/12.05 step1: \EU1/FandolSong-Regular(1)/m/n/12.05 对
  数 字 媒 体 作 品 切 块 处 理，|  之 后 对 数 据 块 做 \EU1/TimesNewRoman(0)/m/n/12.05 hash \EU1
 /FandolSong-Regular(1)/m/n/12.05 运 算，| $\OML/cmm/m/it/12.05 Node[] \OT1/cmr/m/n
@@ -1740,10 +1737,10 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  25168 strings out of 495252
  494176 string characters out of 6180858
- 489098 words of memory out of 5000000
+ 488033 words of memory out of 5000000
  28088 multiletter control sequences out of 15000+600000
  11861 words of font info for 94 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 72i,9n,79p,10470b,1720s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 72i,9n,79p,10470b,1721s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on example.pdf (24 pages).
